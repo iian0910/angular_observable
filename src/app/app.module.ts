@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ApiOpenDataComponent } from './api/api-open-data/api-open-data.component';
 import { ApiModule } from './api/api.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ApiModule } from './api/api.module';
   ],
   imports: [
     BrowserModule,
-    ApiModule
+    ApiModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

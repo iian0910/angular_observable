@@ -1,11 +1,17 @@
 *{
   font-family: "Lucida Grande", "Century Gothic", "Microsoft JhengHei", sans-serif;
 }
-table{
-  border: 1px solid gray;
+.container{
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+select{
+  margin-bottom: 16px;
+}
+table{
+  border: 1px solid gray;
+  width: 100%;
   text-align: center;
   border-spacing: 0;
 }
