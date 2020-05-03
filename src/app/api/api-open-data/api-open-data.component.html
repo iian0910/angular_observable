@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>測站編號</th>
+    <th>觀測地點</th>
+    <th>隸屬於</th>
+    <th>觀測時間</th>
+  </tr>
+  <tr *ngFor="let item of data">
+    <td>{{ item.stationId }}</td>
+    <td>{{ item.parameter[0].parameterValue }}{{ item.parameter[2].parameterValue }}</td>
+    <td>{{ item.parameter[4].parameterValue }}</td>
+    <td>{{ item.time.obsTime }}</td>
+  </tr>
+</table>

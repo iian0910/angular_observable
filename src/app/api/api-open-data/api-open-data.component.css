@@ -1,0 +1,35 @@
+*{
+  font-family: "Lucida Grande", "Century Gothic", "Microsoft JhengHei", sans-serif;
+}
+table{
+  border: 1px solid gray;
+  width: 1200px;
+  min-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 0;
+}
+tr,th,td{
+  border: 1px solid gray;
+}
+table tr th{
+  line-height: 3;
+  background-color: rgb(73, 30, 5);
+  color: #fff;
+}
+table tr td{
+  line-height: 1.8;
+}
+table tr:nth-child(odd){
+  background-color: #fdfbfb;
+}
+table tr:nth-child(even){
+  background-color: #ebedee;
+}
+table tr td:first-child{
+  width: 10%;
+}
+table tr td:last-child{
+  width: 15%;
+}
+
