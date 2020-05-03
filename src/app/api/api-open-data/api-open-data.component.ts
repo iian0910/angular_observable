@@ -9,12 +9,15 @@ import { Observable } from 'rxjs';
 })
 export class ApiOpenDataComponent implements OnInit {
 
-  data: Observable<any>;
+  data;
   constructor(private apisvc: ApiDataService) { }
 
   ngOnInit(): void {
     this.apisvc.getData().subscribe((response: any) => {
       this.data = response.records.location;
+      this.data = this.data.sort((a, b) => {
+        return a.parameter[0].parameterValue > b.parameter[0].parameterValue ? 1 : -1;
+      });
     });
   }
 
